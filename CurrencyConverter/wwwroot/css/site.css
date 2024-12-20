@@ -1,0 +1,193 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex-grow: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Стилі для хедера */
+header {
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    color: #4CAF50;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    padding: 10px 15px;
+}
+
+    .navbar-nav .nav-link:hover {
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 5px;
+    }
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: #4CAF50;
+}
+
+/* Стилі для футера */
+footer {
+    background-color: #2d3e50;
+    color: #ffffff;
+    padding: 1px 0; /* Зменшено відступи */
+    text-align: center;
+    font-size: 0.9em; /* Зменшено шрифт */
+    width: 100%;
+    position: relative; /* Для закріплення внизу*/ 
+    margin-top: auto; /* Виправляє позицію футера */
+}
+
+    footer a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    footer .container {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    footer p {
+        margin: 0 ;
+    }
+
+/* Стилі для загального оформлення */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Контейнер для форм */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #2d3e50;
+}
+
+h3 {
+    color: #333;
+}
+
+/* Стилі для форм */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Стилі для лейблів */
+label {
+    font-weight: bold;
+    color: #607d8b;
+}
+
+/* Стилі для селектів і полів введення */
+select, input[type="number"] {
+    padding: 10px;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+    select:focus, input[type="number"]:focus {
+        border-color: #4CAF50;
+        outline: none;
+    }
+
+/* Стилі для кнопки */
+button {
+    padding: 12px 24px;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+/* Результат конвертації */
+.result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Центрування елементів */
+.center-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Стилі для посилання, щоб виглядало як кнопка */
+a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+    a:hover {
+        background-color: #45a049;
+        transform: scale(1.05);
+    }
+
+    a:focus {
+        outline: none;
+        border: 2px solid #45a049;
+    }

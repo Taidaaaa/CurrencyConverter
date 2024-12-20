@@ -1,0 +1,40 @@
+﻿@model CurrencyConverter.Models.CurrencyRates
+@{
+    ViewData["Title"] = "Currency Converter";
+}
+@if (ViewData["ErrorMessage"] != null)
+{
+    <div style="color: red;">
+        <strong>Error: </strong> @ViewData["ErrorMessage"]
+    </div>
+}
+<form method="post" asp-action="Convert">
+    <div>
+        <label for="fromCurrency">From Currency:</label>
+        <select name="fromCurrency">
+            @foreach (var rate in Model.ConversionRates)
+            {
+                <option value="@rate.Key">@rate.Key</option>
+            }
+        </select>
+    </div>
+    <div>
+        <label for="toCurrency">To Currency:</label>
+        <select name="toCurrency">
+            @foreach (var rate in Model.ConversionRates)
+            {
+                <option value="@rate.Key">@rate.Key</option>
+            }
+        </select>
+    </div>
+    <div>
+        <label for="amount">Amount:</label>
+        <input type="number" name="amount" required />
+    </div>
+    <button type="submit">Convert</button>
+</form>
+@if (ViewBag.Result != null)
+{
+    <h3>Conversion Result:</h3>
+    <p>@ViewBag.Amount @ViewBag.FromCurrency = @ViewBag.Result @ViewBag.ToCurrency</p>
+}
